@@ -14,7 +14,7 @@ git clone https://github.com/DarkSecDevelopers/HiddenEye.git
 
 ### RUNNING (In Linux)
 ```
-cd HiddenEye
+chmod 777 HiddenEye
 ```
 
 ```
@@ -22,11 +22,11 @@ sudo apt install python3-pip
 ```
 
 ```
-sudo pip3 install -r requirements.txt
+cd HiddenEye
 ```
 
 ```
-chmod 777 HiddenEye.py
+sudo pip3 install -r requirements.txt
 ```
 
 ```
@@ -41,7 +41,7 @@ python3 HiddenEye.py
 ```
 ### RUNNING (Arch Linux or Manjaro)
 ```
-cd HiddenEye
+chmod 777 HiddenEye
 ```
 
 ```
@@ -52,11 +52,11 @@ sudo pacman -S python-pip
 ```
 
 ```
-sudo pip3 install -r requirements.txt
+cd HiddenEye
 ```
 
 ```
-chmod 777 HiddenEye.py
+sudo pip3 install -r requirements.txt
 ```
 
 ```
@@ -69,8 +69,52 @@ sudo python3 HiddenEye.py
 sudo ./HiddenEye.py    
 
 ```
+## FOR ANDROID USERS
 
-### RUNNING (For Android users in Termux)
+### 1) INSTALLING IN (USERLAND APP)
+
+```
+Install userland app from playstore.
+
+```
+
+```
+Set up app and install kali from app.Set ssh username(anyname) and password. 
+
+```
+
+```
+When kali will run it'll ask for password type the ssh password.Then do su.After that kali will run on your device wothout root and do apt update For more info read here (https://null-byte.wonderhowto.com/how-to/android-for-hackers-turn-android-phone-into-hacking-device-without-root-0189649/)
+
+```
+```
+apt install python3 && python3-pip && unzip && php && git
+
+```
+```
+git clone https://github.com/DarkSecDevelopers/HiddenEye.git
+
+```
+
+```
+chmod 777 HiddenEye
+```
+
+```
+cd HiddenEye
+
+```
+
+```
+pip3 install -r requirements.txt
+
+```
+
+```
+python3 HiddenEye.py
+```
+
+### 2) INSTALLING IN (TERMUX APP)
 
 ```
 First install { Termux } from Playstore.
@@ -95,12 +139,11 @@ git clone -b Termux-Support-Branch https://github.com/DarkSecDevelopers/HiddenEy
 
 ```
 ```
+chmod 777 HiddenEye
+
+```
+```
 cd HiddenEye
-
-```
-```
-chmod 777 HiddenEye.py
-
 ```
 ```
 python HiddenEye.py
@@ -110,7 +153,7 @@ or
 ./HiddenEye.py
 
 ```
-### Running (One Code installation in Termux)
+### ONE LINE COMMAND TO INSTALL IN TERMUX(ANDROID). Just copy/paste this single command and hit Enter .. ALL DONE
 
 
 ```
@@ -123,6 +166,6 @@ After opening Copy and run this Single Command.
 
 ```
 ```
-pkg install git python php curl openssh grep && pip3 install wget && git clone -b Termux-Support-Branch https://github.com/DarkSecDevelopers/HiddenEye.git && cd HiddenEye && chmod 777 HiddenEye.py && python HiddenEye.py
+pkg install git python php curl openssh grep && pip3 install wget && git clone -b Termux-Support-Branch https://github.com/DarkSecDevelopers/HiddenEye.git && chmod 777 HiddenEye && cd HiddenEye && python HiddenEye.py
 
 ```
