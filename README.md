@@ -14,11 +14,13 @@
 </p>
 
 [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=102)](https://github.com/darksecdevelopers)
-[![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=0.2.7&x2=0)](https://github.com/DarkSecDevelopers/HiddenEye/releases)
+[![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=0.3.1&x2=0)](https://github.com/DarkSecDevelopers/HiddenEye/releases)
+[![Open Source Helpers](https://www.codetriage.com/darksecdevelopers/hiddeneye/badges/users.svg)](https://www.codetriage.com/darksecdevelopers/hiddeneye)
 
 </p>
 
-[![Made By Hipsters](https://forthebadge.com/images/badges/built-by-hipsters.svg)]()
+# DEVELOPERS & CONTRIBUTORS
+
 1) ANONUD4Y (https://github.com/An0nUD4Y)
 2) USAMA ABDUL SATTAR (https://github.com/usama7628674)
 3) sTiKyt (https://github.com/sTiKyt)
@@ -26,7 +28,7 @@
 5) Micrafast (https://github.com/Micrafast)
 6) ___________ (WAITING FOR YOU)
 
-### SCREENSHOT (Android-Userland)
+# SCREENSHOT (Android-Userland)
 ![Shot](https://github.com/DarkSecDevelopers/HiddenEye/blob/master/Screenshot.png)
 
 
@@ -54,6 +56,13 @@
 * Wget from Python
 * PHP
 * sudo
+
+# FOUND A BUG ? / HAVE ANY ISSUE ? :- (Read This)
+* Check closed & solved issues/bugs before opening new.
+* Make sure your issue is related to the codes and resources of this repository.
+* Its your responsibility to response on your opened issues.
+* If we don't found user response on his/her issue in the particular time interval , Then we have to close that issue.
+* Do Not Spam or Advertise & Respect Everyone.
 
 ### WHAT'S NEW FEATURES
 **1) LIVE ATTACK**
@@ -209,7 +218,10 @@ git clone -b Termux-Support-Branch https://github.com/DarkSecDevelopers/HiddenEy
    
  **34) Yandex PHISHING:**
    - Traditional Yandex Login Page
-
+   
+ **35) Reddit PHISHING:**
+   - Old Login Page
+   - New Login Page
 </p>
 
 <h3>Ascii error fix</h3>
